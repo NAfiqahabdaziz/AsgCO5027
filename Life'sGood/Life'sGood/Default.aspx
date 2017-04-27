@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Life_sGood.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+  
+  
+
+  
+  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <!--beginning input-->
@@ -24,9 +29,10 @@
 			  <div class="span4">
 												  <div class="title">
                                                   <h3>Products</h3></div>
-                                                  <div id="images1">
-			    <img src="~/images/1st page/gif.gif" alt="gif" runat="server"/></div>
-					  <p>&nbsp;</p>
+                                                  <div class="images1">
+			    <img src="~/images/1st page/gif.gif" alt="gif" runat="server" />
+                                                  </div>
+              
                       									<p>Our Product to comfort you and making your life meaningful.</p>
               </div>
                                                     		 <div class="span4">

@@ -184,23 +184,22 @@ a:hover {
 
 #adjust1 img{
     width:250px;
-    height:250px;
+    height:245px;
     position:center;
   
 }
 
-#images1{
+.images1 img{
+    height: 245px;
+            width: 252px;
 
-     width:250px;
-    height:225px;
-    position:center;
-  
 
 }
 
 #gif img{
     margin-left:135px;
     width:650px;
+ 
     margin-top:15px;
 }
 
