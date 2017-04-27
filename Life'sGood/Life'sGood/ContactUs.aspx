@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
       <div id="greet">
-    <h3>Our Location:</h3>
+    <h5>Our Location:</h5>
       
   
        <div id="map">
