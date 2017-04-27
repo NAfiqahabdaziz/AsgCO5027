@@ -8,29 +8,30 @@
       
   
        <div id="map">
-
-  </div>
-    <script>
-      var map;
+             <script>
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: 4.8857309, lng: 114.93166919999999 },
-          zoom: 20
+          var uluru = { lat: 4.8857309, lng: 114.93166919999999 }
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
         });
       }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxacc4CHGAsIpzmpYk5AtCKXJ-Bd7Fnkc&callback=initMap" >
-    </script>
-         
-
-
-
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxacc4CHGAsIpzmpYk5AtCKXJ-Bd7Fnkc&callback=initMap">
+</script>
+  
+           </div>
           </div>
     <div id="contact_form">
 
     <h5>Contact Us:</h5>
         &nbsp;<asp:Label ID="Label5" runat="server" Text="Label">Username:</asp:Label>
-         &nbsp;<asp:TextBox ID="TextBox5" runat="server" Width="186px"></asp:TextBox>
+         &nbsp;<asp:TextBox ID="TextBox5" runat="server" Width="186px" OnTextChanged="TextBox5_TextChanged"></asp:TextBox>
         <br />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox5" ErrorMessage="*Fill up the Name*"></asp:RequiredFieldValidator>
     <br />
@@ -38,6 +39,8 @@
      &nbsp;<asp:Label ID="Label2" runat="server" Text="Label">Email:</asp:Label>
 
      &nbsp;<asp:TextBox ID="TextBox2" runat="server" Width="217px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="*Email is required*"></asp:RequiredFieldValidator>
+    <br />
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="*Invalid Email Format*" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
     <br />
     <br />
@@ -55,6 +58,7 @@
 
 
     &nbsp;<asp:TextBox ID="TextBox4" runat="server" Height="146px" TextMode="MultiLine" Width="253px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="*Message cannot be empty*"></asp:RequiredFieldValidator>
 
     <br />
     <br />

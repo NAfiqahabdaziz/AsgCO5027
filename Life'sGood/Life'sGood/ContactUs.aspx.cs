@@ -48,5 +48,10 @@ namespace Life_sGood
 
             }
         }
+
+        protected void TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

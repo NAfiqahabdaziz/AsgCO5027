@@ -8,7 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <!--beginning input-->
-    <div id="wrapper">
+    <div id="wrapper1">
         	<div class="container">	
     <div id="gif">
         <img src="~/images/1st page/anigif.gif" alt="slideshow" runat="server" />
